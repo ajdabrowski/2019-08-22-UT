@@ -58,14 +58,26 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
+
+{% comment %}
+REGISTRATION
+
+This block displays the address and links to maps showing directions
+if the latitude and longitude of the workshop have been set.  You
+can use https://itouchmap.com/latlong.html to find the lat/long of an
+address.
+{% endcomment %}
+<p id="registration">
+  <strong>Registration:</strong>
+  Registration for the workshop will open in mid-July. Check back for a link to sign up.
+</p>
+
 {% comment %}
 INTRODUCTION
 
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
-
-Registration for the workshop will open in mid-July. Check back for a link to sign up.
 
 {% if page.carpentry == "swc" %}
 {% include sc/intro.html %}
@@ -88,6 +100,20 @@ workshop is only open to people from a particular institution.
 {% elsif page.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
+
+{% comment %}
+REGISTRATION
+
+This block displays the address and links to maps showing directions
+if the latitude and longitude of the workshop have been set.  You
+can use https://itouchmap.com/latlong.html to find the lat/long of an
+address.
+{% endcomment %}
+<p id="registration">
+  <strong>Registration:</strong>
+  Registration for the workshop will open in mid-July. Check back for a link to sign up.
+</p>
+
 
 {% comment %}
 LOCATION
