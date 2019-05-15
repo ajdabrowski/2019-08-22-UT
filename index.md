@@ -58,18 +58,8 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
-
-{% comment %}
-REGISTRATION
-
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://itouchmap.com/latlong.html to find the lat/long of an
-address.
-{% endcomment %}
-<p id="registration">
-  <strong>Registration:</strong>
-  Registration for the workshop will open in mid-July. Check back for a link to sign up.
+<h3Registration</h3> 
+<p>Registration for the workshop will open in mid-July. Check back for a link to sign up.
 </p>
 
 {% comment %}
