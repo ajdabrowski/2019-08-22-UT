@@ -62,20 +62,6 @@ displayed if the 'eventbrite' field in the header is not set.
 <p>Registration for the workshop will open in mid-July. Check back for a link to sign up.
 </p>
 
-{% comment %}
-INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-
-{% if page.carpentry == "swc" %}
-{% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
 
 {% comment %}
 AUDIENCE
@@ -91,19 +77,6 @@ workshop is only open to people from a particular institution.
 {% include lc/who.html %}
 {% endif %}
 
-{% comment %}
-REGISTRATION
-
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://itouchmap.com/latlong.html to find the lat/long of an
-address.
-{% endcomment %}
-<p id="registration">
-  <strong>Registration:</strong>
-  Registration for the workshop will open in mid-July. Check back for a link to sign up.
-</p>
-
 
 {% comment %}
 LOCATION
@@ -115,7 +88,7 @@ address.
 {% endcomment %}
 {% if page.latlng %}
 <p id="where">
-  <strong>Where:</strong>
+  <h3>Where</h3>
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
@@ -131,7 +104,7 @@ This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <h3>When</h3>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -143,7 +116,7 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
+  <h3>Requirements</h3> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 </p>
 
@@ -151,7 +124,7 @@ Modify the block below if there are any special requirements.
 CODE OF CONDUCT
 {% endcomment %}
 <p id="code-of-conduct">
-<strong>Code of Conduct:</strong>  Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+<h3>Code of Conduct</h3>  Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
 </p>
 
 
@@ -162,7 +135,7 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong> We are committed to making this workshop
+  <h3>Accessibility</h3> We are committed to making this workshop
   accessible to everybody.
   The workshop organizers have checked that:
 </p>
@@ -185,7 +158,7 @@ CONTACT EMAIL ADDRESS
 Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
-  <strong>Contact</strong>:
+  <h3>Contact</h3>
   Please email
   {% if page.email %}
   {% for email in page.email %}
@@ -203,6 +176,21 @@ Display the contact email address set in the configuration file.
   {% endif %}
   for more information.
 </p>
+
+{% comment %}
+INTRODUCTION
+
+Edit the general explanatory paragraph below if you want to change
+the pitch.
+{% endcomment %}
+
+{% if page.carpentry == "swc" %}
+{% include sc/intro.html %}
+{% elsif page.carpentry == "dc" %}
+{% include dc/intro.html %}
+{% elsif page.carpentry == "lc" %}
+{% include lc/intro.html %}
+{% endif %}
 
 <hr/>
 
