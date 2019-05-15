@@ -64,6 +64,9 @@ INTRODUCTION
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
+
+Registration for the workshop will open in mid-July. Check back for a link to sign up.
+
 {% if page.carpentry == "swc" %}
 {% include sc/intro.html %}
 {% elsif page.carpentry == "dc" %}
