@@ -58,10 +58,7 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
-<h3>Registration</h3> 
-<p>Registration for the workshop will open in mid-July. Check back for a link to sign up.
-</p>
-
+<h3>Registration for the workshop will open in mid-July. Check back for a link to sign up!</h3> 
 
 {% comment %}
 AUDIENCE
