@@ -59,13 +59,9 @@ displayed if the 'eventbrite' field in the header is not set.
 <h2 id="general">General Information</h2>
 
 <h3>Registration</h3> 
-<iframe
-  src="https://cvent.me/2dZwr"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
+ Register at: <a href="https://cvent.me/2dZwr">Cvent Registration</a>
+ Cost: $25.00
+ Lunch will be provided both days
 
 {% comment %}
 AUDIENCE
