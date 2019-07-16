@@ -58,7 +58,14 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
-<h3>Registration for the workshop will open in mid-July. Check back for a link to sign up!</h3> 
+<h3>Registration</h3> 
+<iframe
+  src="https://cvent.me/2dZwr"
+  frameborder="0"
+  width="100%"
+  height="280px"
+  scrolling="auto">
+</iframe>
 
 {% comment %}
 AUDIENCE
