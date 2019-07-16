@@ -60,7 +60,7 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h3>Registration</h3> 
 <ul>
-  <li>Register at: <a href="https://cvent.me/2dZwr">Cvent Registration</a></li>
+  <li>Register at: <a href="https://cvent.me/2dZwr">https://cvent.me/2dZwr</a></li>
   <li>Cost: $25.00</li>
   <li>Note: Lunch will be provided both days, as well as coffee and snacks.</li>
 </ul>
